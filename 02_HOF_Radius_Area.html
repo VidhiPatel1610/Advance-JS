@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const radius = [1,2];
+
+        //console.log(radius.length);//2
+        //console.log(Math.PI); //3.141592653589793
+        
+
+       /* const calcArea=function ()
+        {
+            const op = [];
+            for(let i=0;i<radius.length;i++)
+            {
+                //console.log(Math.PI*radius[i]*radius[i]);    //3.141592653589793  12.566370614359172
+                op.push(Math.PI*radius[i]*radius[i]);
+            }
+            return op;
+        }
+        console.log(calcArea());*/
+
+        const area = function (x)
+        {
+            return Math.PI*x*x;
+        }
+
+        const Calculate = function (r,xyz)
+        {
+            const op = [];
+
+            for(i=0;i<r.length;i++)
+            {
+                op.push(xyz(r[i]));
+            }
+            return op;
+        }
+        console.log(Calculate(radius,area));
+    </script>
+</body>
+</html>

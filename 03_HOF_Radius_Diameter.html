@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const radius = [3,4];
+
+        const calcArea=function ()
+        {
+            const op = [];
+            for(let i=0;i<radius.length;i++)
+            {
+                //console.log(2*Math.PI*radius[i]);
+                op.push(2*Math.PI*radius[i]);
+            }
+            return op;
+        }
+        console.log(calcArea());
+
+    
+        const diameter= function(x)
+        {
+            return 2*Math.PI*x;
+        }
+
+        const calcdiameter = function (r,d)
+        {
+            const op=[];
+            for(i=0;i<r.length;i++)
+            {
+                op.push(d(r[i]));
+            }
+            return op;
+        }
+        console.log(calcdiameter(radius,diameter));
+    </script>
+</body>
+</html>
