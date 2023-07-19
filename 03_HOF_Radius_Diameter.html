@@ -9,7 +9,7 @@
     <script>
         const radius = [3,4];
 
-        const calcArea=function ()
+        const calcdiameter = function ()
         {
             const op = [];
             for(let i=0;i<radius.length;i++)
@@ -19,7 +19,7 @@
             }
             return op;
         }
-        console.log(calcArea());
+        console.log(calcdiameter());
 
     
         const diameter= function(x)
@@ -27,7 +27,7 @@
             return 2*Math.PI*x;
         }
 
-        const calcdiameter = function (r,d)
+        const calculate = function (r,d)
         {
             const op=[];
             for(i=0;i<r.length;i++)
@@ -36,7 +36,7 @@
             }
             return op;
         }
-        console.log(calcdiameter(radius,diameter));
+        console.log(calculate(radius,diameter));
     </script>
 </body>
 </html>
